@@ -1,0 +1,5 @@
+Launch stress tests
+python3 -m pytest -v -s tests/test_stress_tests.py
+
+Launch load tests
+python3 -m pytest -v -s tests/test_load_tests.py
