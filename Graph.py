@@ -15,20 +15,6 @@ class Graph:
                 self.vertices.append((i, j))
 
 
-class Maze:
-    height = 0
-    width = 0
-    field = None
-
-    def __init__(self, maze_h, maze_w):
-        self.height = maze_h*2 + 1
-        self.width = maze_w*2 + 1
-        self.field = [[1] * self.height for i in range(self.width)]
-        for i in range(1, self.height, 2):
-            for j in range(1, self.width, 2):
-                self.field[i][j] = 0
-
-
 def dfs_generation(graph, start_h=0, start_w=0):
     stack = []
     visited = []

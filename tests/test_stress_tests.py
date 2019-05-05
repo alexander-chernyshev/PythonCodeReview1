@@ -10,7 +10,7 @@ def test_big_input_dfs_case():
     dfs_generation(graph)
     test_time = time.time() - start_time
     print("time for input 50x50 dfs is", test_time)
-    assert test_time < 1
+    assert test_time < 2
 
 
 def test_big_input_kruskal_case():
@@ -19,7 +19,7 @@ def test_big_input_kruskal_case():
     kruskal_generation(graph)
     test_time = time.time() - start_time
     print("time for input 50x50 kruskal is", test_time)
-    assert test_time < 2
+    assert test_time < 3
 
 
 def test_big_input_bfs_1():

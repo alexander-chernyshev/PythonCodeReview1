@@ -6,7 +6,7 @@ class Maze:
     def __init__(self, maze_h, maze_w):
         self.height = maze_h*2 + 1
         self.width = maze_w*2 + 1
-        self.field = [[1] * self.height for i in range(self.width)]
+        self.field = [[1] * self.width for i in range(self.height)]
         for i in range(1, self.height, 2):
             for j in range(1, self.width, 2):
                 self.field[i][j] = 0
